@@ -20,4 +20,40 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  sessions:
+    new:
+      log_in: Login
+      email: E-mail
+      password: Password
+      submit: Sign-in
+      new_user: New User?
+      sign_up_now: Sign up now!
+  users:
+    new:
+      sign_up: Sign Up
+      name: Name
+      email: E-mail
+      password: Password
+      password_confirmation: Password (Confirmation)
+      create_my_account: Create my account
+  static_pages:
+    home:
+      welcome_message: Welcome to Recipebook!
+      title: Recipebook
+      home: Home
+      myfavorite: MyFavorite
+      login: Login
+      sign_up_now: Sign up now!
+      language_en: English
+      language_ja: 日本語
+  activerecord:
+    attributes:
+      user:
+      name: Name
+      email: E-mail
+    errors:
+      messages:
+        record_invalid: "バリデーションに失敗しました: %{errors}"
+        restrict_dependent_destroy:
+          has_one: "%{record}が存在しているので削除できません"
+          has_many: "%{record}が存在しているので削除できません"

@@ -1,11 +1,13 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to "Recipebook", '#' %>
+    <%= link_to t('.title'), '#' %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",   '#' %></li>
-        <li><%= link_to "Help",   '#' %></li>
-        <li><%= link_to "Log in", '#' %></li>
+        <li><%= link_to t('.home'),   '#' %></li>
+        <li><%= link_to t('.myfavorite'),   '#' %></li>
+        <li><%= link_to t('.login'), users_new_path %></li>
+  
+        <li><%= link_to t('.language_en'), '#' %></li>
       </ul>
     </nav>
   </div>
