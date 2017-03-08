@@ -9,7 +9,11 @@ ja:
       sign_up_now: ユーザー登録
   users:
     new:
+      title_signup: ユーザー登録
       sign_up: ユーザー登録
+      sample_name: 山本 理子
+      sample_email: you@example.com
+      sample_password: パスワードを入力ください
       name: 名前
       email: E-mail
       password: パスワード
@@ -20,9 +24,10 @@ ja:
       myfavorite: MyFavorite
   layouts:
     header:
-      title: Recipebook
+      title: Remin-DE-Recipe
       home: ホーム
-      myfavorite: MyFavorite
+      myfavorite: お気に入り♡
+      sign_up: 新規登録
       login: ログイン
       sign_up_now: ユーザー登録をしよう！
       language: 言語
@@ -33,7 +38,18 @@ ja:
       user:
         name: 名前
         email: E-mail
+        password: パスワード
     errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: を入力してください
+            email:
+              blank: を入力してください
+              invalid: が無効です
+            password: 
+              blank: を入力してください
       messages:
         record_invalid: "バリデーションに失敗しました: %{errors}"
         restrict_dependent_destroy:

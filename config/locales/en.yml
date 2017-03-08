@@ -30,12 +30,16 @@ en:
       sign_up_now: Sign up now!
   users:
     new:
+      title_signup: Sign Up
       sign_up: Sign Up
       name: Name
       email: E-mail
       password: Password
       password_confirmation: Password (Confirmation)
       create_my_account: Create my account
+      sample_name: John Daw
+      sample_email: you@example.com
+      sample_password: Enter your password
   static_pages:
     home:
       myfavorite: MyFavorite
@@ -44,6 +48,7 @@ en:
       title: Recipebook
       home: Home
       myfavorite: MyFavorite
+      sign_up: Sign Up
       login: Login
       sign_up_now: Sign up now!
       language: Language
@@ -52,9 +57,20 @@ en:
   activerecord:
     attributes:
       user:
-      name: Name
-      email: E-mail
+        name: Name
+        email: Email
+        password: Password
     errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: is blank
+            email:
+              blank: is blank 
+              invalid: is invalid
+            password: 
+              blank: is blank
       messages:
         record_invalid: "バリデーションに失敗しました: %{errors}"
         restrict_dependent_destroy:
