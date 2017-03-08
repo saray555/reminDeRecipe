@@ -11,11 +11,14 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       flash[:success] = "Welcome to the Remin-De-Recipe!"
-      redirect_to @user
+      redirect_to user_path(@user)
     else
       render 'new'
     end
   end
+  
+#  def index
+#  end
   
   private
 

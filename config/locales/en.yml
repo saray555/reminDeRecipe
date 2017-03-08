@@ -45,7 +45,7 @@ en:
       myfavorite: MyFavorite
   layouts:
     header:
-      title: Recipebook
+      title: Remin-DE-Recipe
       home: Home
       myfavorite: MyFavorite
       sign_up: Sign Up
@@ -65,12 +65,12 @@ en:
         user:
           attributes:
             name:
-              blank: is blank
+              blank: can't be blank
             email:
-              blank: is blank 
+              blank: can't be blank 
               invalid: is invalid
             password: 
-              blank: is blank
+              blank: can't be blank
       messages:
         record_invalid: "バリデーションに失敗しました: %{errors}"
         restrict_dependent_destroy:
