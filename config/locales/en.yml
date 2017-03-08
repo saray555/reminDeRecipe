@@ -38,14 +38,17 @@ en:
       create_my_account: Create my account
   static_pages:
     home:
-      welcome_message: Welcome to Recipebook!
+      myfavorite: MyFavorite
+  layouts:
+    header:
       title: Recipebook
       home: Home
       myfavorite: MyFavorite
       login: Login
       sign_up_now: Sign up now!
-      language_en: English
-      language_ja: 日本語
+      language: Language
+      english: English
+      japanese: 日本語
   activerecord:
     attributes:
       user:

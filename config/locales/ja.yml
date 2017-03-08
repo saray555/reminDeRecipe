@@ -17,21 +17,22 @@ ja:
       create_my_account: アカウントを作成する
   static_pages:
     home:
-      welcome_message: Microposts へようこそ！
+      myfavorite: MyFavorite
+  layouts:
+    header:
       title: Recipebook
       home: ホーム
       myfavorite: MyFavorite
       login: ログイン
       sign_up_now: ユーザー登録をしよう！
-      language_en: English
-      language_ja: 日本語
+      language: 言語
+      english: English
+      japanese: 日本語
   activerecord:
     attributes:
       user:
         name: 名前
         email: E-mail
-        location: 場所
-        profile: プロフィール
     errors:
       messages:
         record_invalid: "バリデーションに失敗しました: %{errors}"

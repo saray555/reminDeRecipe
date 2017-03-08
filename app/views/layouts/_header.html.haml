@@ -1,0 +1,9 @@
+%ul.dropdown-menu{role: 'menu'}
+  :ruby
+    locales = {
+      ja: '日本語',
+      en: 'English',
+    }
+  - locales.each do |locale, label|
+    - label = (I18n.locale == locale ? icon('check') : '') + label
+    %li= link_to(label, url_for(params.merge(locale: locale)))
