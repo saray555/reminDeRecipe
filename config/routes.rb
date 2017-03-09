@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   post   'login' , to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
  
-  resources :users
+  resources :users, :sessions
 
   scope '(/:locale)', constraints: { locale: /\w{2}/ } do
     get '/intro', controller: :home, action: :intro

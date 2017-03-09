@@ -17,8 +17,8 @@ class UsersController < ApplicationController
     end
   end
   
-#  def index
-#  end
+  def index
+  end
   
   private
 

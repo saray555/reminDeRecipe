@@ -40,17 +40,20 @@ en:
       sample_name: John Daw
       sample_email: you@example.com
       sample_password: Enter your password
+  　show:
+      your_recipe: Your Recipe
   static_pages:
     home:
       myfavorite: MyFavorite
   layouts:
     header:
-      title: Remin-DE-Recipe
+      project_name: Remin-de-Recipe
       home: Home
       myfavorite: MyFavorite
       sign_up: Sign Up
       login: Login
       sign_up_now: Sign up now!
+      hello: Hi,  
       language: Language
       english: English
       japanese: 日本語

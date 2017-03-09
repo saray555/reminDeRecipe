@@ -6,7 +6,7 @@ ja:
       password: パスワード
       submit: サインイン
       new_user: 新規ユーザー？
-      sign_up_now: ユーザー登録
+      sign_up_now: ユーザー登録はこちら
   users:
     new:
       title_signup: ユーザー登録
@@ -19,17 +19,20 @@ ja:
       password: パスワード
       password_confirmation: パスワード (確認)
       create_my_account: アカウントを作成する
+    show:
+      your_recipe: あなたのレシピ
   static_pages:
     home:
       myfavorite: MyFavorite
   layouts:
     header:
-      title: Remin-de-Recipe
+      project_name: Remin-de-Recipe
       home: ホーム
       myfavorite: お気に入り♡
       sign_up: 新規登録
       login: ログイン
       sign_up_now: ユーザー登録をしよう！
+      hello: Hi, 
       language: 言語
       english: English
       japanese: 日本語
