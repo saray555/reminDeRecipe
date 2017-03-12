@@ -1,6 +1,57 @@
 <div class="container">
   <h1>
     <%= t('.your_recipe') %>
-    
   </h1>
+  
+  
+  
+  <div class="container marketing">
+    <div class="row">
+      <div class="col-lg-4" style="text-align: center">
+        <h2>title</h2>
+        <p><img class="img-circle" src="" alt="" width="180" height="180">
+        </p>
+        <o>aaaa</o>
+        <%= link_to t('.view_details') %>    
+      </div>
+      
+      <div class="col-lg-4" style="text-align: center">
+        <h2>title</h2>
+        <p><img class="img-circle" src="" alt="" width="180" height="180">
+        </p>
+        <o>aaaa</o>
+        <%= link_to t('.view_details') %>    
+      </div>
+
+      <div class="col-lg-4" style="text-align: center">
+        <h2>title</h2>
+        <p><img class="img-circle" src="" alt="" width="180" height="180">
+        </p>
+        <o>aaaa</o>
+        <%= link_to t('.view_details') %>    
+      </div>
+      
+    </div>  
+  </div>
+  
+  <div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+      </h1>
+    </section>
+  </aside>
+  <div class="col-md-8">
+    <%= render 'follow_form' if logged_in? %>
+    <% if @user.microposts.any? %>
+      <h3>Microposts (<%= @user.microposts.count %>)</h3>
+      <ol class="microposts">
+        <%= render @microposts %>
+      </ol>
+    <% end %>
+  </div>
+</div>
+  
 </div>

@@ -33,9 +33,13 @@ ja:
       login: ログイン
       sign_up_now: ユーザー登録をしよう！
       hello: Hi, 
+      logout: ログアウト 
       language: 言語
       english: English
       japanese: 日本語
+  static_pages:
+    home:
+      welcome: ようこそ！
   activerecord:
     attributes:
       user:

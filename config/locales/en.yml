@@ -40,8 +40,8 @@ en:
       sample_name: John Daw
       sample_email: you@example.com
       sample_password: Enter your password
-  　show:
-      your_recipe: Your Recipe
+  show:
+    your_recipe: Your Recipe
   static_pages:
     home:
       myfavorite: MyFavorite
@@ -54,9 +54,13 @@ en:
       login: Login
       sign_up_now: Sign up now!
       hello: Hi,  
+      logout: Logout
       language: Language
       english: English
       japanese: 日本語
+  static_pages:
+    home:
+      welcome: Welcome!
   activerecord:
     attributes:
       user:
@@ -74,8 +78,8 @@ en:
               invalid: is invalid
             password: 
               blank: can't be blank
-      messages:
-        record_invalid: "バリデーションに失敗しました: %{errors}"
-        restrict_dependent_destroy:
-          has_one: "%{record}が存在しているので削除できません"
-          has_many: "%{record}が存在しているので削除できません"
+    messages:
+      record_invalid: "バリデーションに失敗しました: %{errors}"
+      restrict_dependent_destroy:
+        has_one: "%{record}が存在しているので削除できません"
+        has_many: "%{record}が存在しているので削除できません"
