@@ -3,7 +3,7 @@
     <%= @user.name +  t('.your_recipe') %>
   </h1>
 
-  <%= link_to "テストレシピ new", new_menu_path %>    
+  <%= link_to "テストレシピ new", new_menu_path if current_user %>    
       
   
   

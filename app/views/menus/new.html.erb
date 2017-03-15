@@ -3,24 +3,31 @@
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <%#= form_for(@menu) do |f| %>
+    <%= form_for(@menu) do |f| %>
       
-      <%#= render 'shared/error_messages', object: f.object %> 
+      <%= render 'shared/error_messages', object: f.object %>
       
-      <%#= f.label t('.name') %>
-      <%#= f.text_field :name, class: 'form-control',  :placeholder => t('.sample_name') %>
-
-      <%#= f.label t('.email') %>
-      <%#= f.text_field :email, class: 'form-control',  :placeholder => t('.sample_email') %>
-
-      <%#= f.label t('.password') %>
-      <%#= f.password_field :password, class: 'form-control',  :placeholder => t('.sample_password') %>
-
-      <%#= f.label t('.password_confirmation')  %>
-      <%#= f.password_field :password_confirmation, class: 'form-control',  :placeholder => t('.sample_password') %>
-
-      <%#= f.submit t('.create_menu'), class: "btn btn-large btn-primary" %>
-    <%# end %>
+      <%= f.label t('.menu_name') %>
+      <%= f.text_field :menu_name %>
+      
+      <%= f.label t('.menu_date') %>
+      <%= f.date_field :menu_date %>
+      
+      <%= f.label t('.description') %>
+      <%= f.text_area :description %>
+      
+      <%= f.submit t('.create_menu'), class: "btn btn-large btn-primary" %>
+    <% end %>
   </div>
 
 </div>
+
+
+  <!--create_table "menus", force: :cascade do |t|-->
+  <!--  t.integer  "user_id"-->
+  <!--  t.date     "menu_date"-->
+  <!--  t.string   "menu_name"-->
+  <!--  t.string   "description"-->
+  <!--  t.datetime "created_at",  null: false-->
+  <!--  t.datetime "updated_at",  null: false-->
+  <!--end-->

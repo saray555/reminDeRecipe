@@ -9,7 +9,7 @@ class CreateMenus < ActiveRecord::Migration
 
       t.timestamps null: false
       
-      t.index [:menu_id, :created_at]
+      t.index [:user_id, :menu_id, :created_at]
     end
   end
 end

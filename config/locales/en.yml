@@ -65,6 +65,14 @@ en:
     home:
       welcome_msg: Welcome to the ReminDeRecipe!
       sign_up_now: Sign up now!
+  menus:
+    new:
+      title_menu: Register Your Recipe
+      menu_name: Recipe Name
+      menu_date: Created Date
+      description: Description
+      create_menu: Register Your Recipe
+    show:
   activerecord:
     attributes:
       user:

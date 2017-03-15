@@ -2,17 +2,14 @@ Rails.application.routes.draw do
   root to: 'static_pages#home'
   
   get    'signup', to: 'users#new'
+  get    'signup', to: 'users#index'
   get    'login' , to: 'sessions#new'
   post   'login' , to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
-  get    'menus' , to: 'menus#new'
-  get    'menus' , to: 'menus#edit'
-  get    'menus' , to: 'menus#show'
-  patch  'menus' , to: 'menus#update'
-  delete 'menus' , to: 'menus#destroy'
-  
- 
-  resources :users, :microposts, :menus
+
+  resources :users
+  resources :microposts
+  resources :menus
   resources :relationships, only: [:create, :destroy]
 
   scope '(/:locale)', constraints: { locale: /\w{2}/ } do

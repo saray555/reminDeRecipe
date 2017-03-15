@@ -39,6 +39,14 @@ ja:
     home:
       welcome_msg: ようこそ、ReminDeRecipe へ!
       sign_up_now: ユーザー登録はこちら
+  menus:
+    new:
+      title_menu: レシピを登録
+      menu_name: レシピ名
+      menu_date: 作成日
+      description: 詳細
+      create_menu: レシピを登録
+    show:
   activerecord:
     attributes:
       user:
