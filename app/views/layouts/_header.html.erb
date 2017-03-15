@@ -6,8 +6,8 @@
         <li ><%= link_to t('.home'), root_path %></li>
   
 <% if logged_in? %>
-      <li ><%= link_to t('.myrecipe'), user_path %></li>
-      <li ><%= link_to t('.myfavorite'), '#' %></li>
+      <li ><%#= link_to t('.myrecipe'), user_path %></li>
+      <li ><%= link_to t('.myfavorite'), '<div id=""></div>' %></li>
 
 <% else %>
         <li ><%= link_to t('.sign_up'), new_user_path %></li>
@@ -22,7 +22,7 @@
 
 <% if logged_in? %>
       <li style="color:#ffffff;"> 
-      <strong><%= t('.hello') %></strong> <%= @user.name %>
+      <strong><%= t('.hello') %></strong> <%#= @user.name %>
       </li>
       <span style="margin-right: 10em;"></span>
       <li style="text-align:right;"> <%= link_to t('.logout'), logout_path, method: "delete"%> </li>

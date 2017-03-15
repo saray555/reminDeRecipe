@@ -5,8 +5,14 @@ Rails.application.routes.draw do
   get    'login' , to: 'sessions#new'
   post   'login' , to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
+  get    'menus' , to: 'menus#new'
+  get    'menus' , to: 'menus#edit'
+  get    'menus' , to: 'menus#show'
+  patch  'menus' , to: 'menus#update'
+  delete 'menus' , to: 'menus#destroy'
+  
  
-  resources :users, :microposts
+  resources :users, :microposts, :menus
   resources :relationships, only: [:create, :destroy]
 
   scope '(/:locale)', constraints: { locale: /\w{2}/ } do
