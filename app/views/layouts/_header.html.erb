@@ -4,9 +4,12 @@
   <nav>
       <ul class="nav navbar-nav navbar-left">
         <li ><%= link_to t('.home'), root_path %></li>
-        <li ><%= link_to t('.myfavorite'), '#' %></li>
   
-<% if logged_in? != true %>
+<% if logged_in? %>
+      <li ><%= link_to t('.myrecipe'), user_path %></li>
+      <li ><%= link_to t('.myfavorite'), '#' %></li>
+
+<% else %>
         <li ><%= link_to t('.sign_up'), new_user_path %></li>
         <li ><%= link_to t('.login'), login_path %></li>
 <% end %>
@@ -15,11 +18,13 @@
   
 
       <!-- Small button group -->
-      <ul class="nav navbar-nav navbar-right" style="width: 450px; text-align:right;">
+      <ul class="nav navbar-nav navbar-right" style="width: 350px; ">
 
 <% if logged_in? %>
-      <li style="text-align:right; color:#ffffff;"><strong><%= t('.hello') %></strong></li>
-      <span style="margin-right: 2em;"></span>
+      <li style="color:#ffffff;"> 
+      <strong><%= t('.hello') %></strong> <%= @user.name %>
+      </li>
+      <span style="margin-right: 10em;"></span>
       <li style="text-align:right;"> <%= link_to t('.logout'), logout_path, method: "delete"%> </li>
 <% end %>       
       <div class="btn-group"> 
@@ -31,6 +36,7 @@
           <li><%= link_to( t('.japanese'), url_for(params.merge(locale: 'ja'))) %></li>
         </ul>
       </div>
+      </ul>
     </nav>
   </div>
 </header>

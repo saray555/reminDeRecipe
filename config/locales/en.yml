@@ -40,15 +40,18 @@ en:
       sample_name: John Daw
       sample_email: you@example.com
       sample_password: Enter your password
-  show:
-    your_recipe: Your Recipe
-  static_pages:
-    home:
-      myfavorite: MyFavorite
+      name: 名前
+      email: E-mail
+      password: パスワード
+      password_confirmation: パスワード (確認)
+      create_my_account: アカウントを作成する
+    show:
+      your_recipe: "'s Recipe"
   layouts:
     header:
       project_name: Remin-de-Recipe
       home: Home
+      myrecipe: Your Recipe
       myfavorite: MyFavorite
       sign_up: Sign Up
       login: Login
@@ -60,7 +63,8 @@ en:
       japanese: 日本語
   static_pages:
     home:
-      welcome: Welcome!
+      welcome_msg: Welcome to the ReminDeRecipe!
+      sign_up_now: Sign up now!
   activerecord:
     attributes:
       user:

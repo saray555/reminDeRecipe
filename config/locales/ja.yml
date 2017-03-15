@@ -20,14 +20,12 @@ ja:
       password_confirmation: パスワード (確認)
       create_my_account: アカウントを作成する
     show:
-      your_recipe: あなたのレシピ
-  static_pages:
-    home:
-      myfavorite: MyFavorite
+      your_recipe: さんのレシピ
   layouts:
     header:
       project_name: Remin-de-Recipe
       home: ホーム
+      myrecipe: あなたのレシピ
       myfavorite: お気に入り♡
       sign_up: 新規登録
       login: ログイン
@@ -39,7 +37,8 @@ ja:
       japanese: 日本語
   static_pages:
     home:
-      welcome: ようこそ！
+      welcome_msg: ようこそ、ReminDeRecipe へ!
+      sign_up_now: ユーザー登録はこちら
   activerecord:
     attributes:
       user:
