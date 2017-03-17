@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   include SessionsHelper
   before_action :set_locale
-  
+
   private
   # I18n.locale をセットする
   def set_locale
@@ -41,8 +41,9 @@ class ApplicationController < ActionController::Base
     { locale: I18n.locale }
   end
   
-  private
   def logged_in_user
+    root_path
+    
     unless logged_in?
       store_location
       flash[:danger] = "Please log in."

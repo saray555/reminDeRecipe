@@ -19,9 +19,10 @@ class MenusController < ApplicationController
     end
   end
   
-  def index 
-      redirect_to users_path#(@menu)
-  end
+#  def index 
+#      #redirect_to users_path#(@menu)
+#      render 'users#show'
+#  end
   
   private
   

@@ -47,6 +47,7 @@ en:
       create_my_account: アカウントを作成する
     show:
       your_recipe: "'s Recipe"
+      new_recipe: Register New Recipe
   layouts:
     header:
       project_name: Remin-de-Recipe

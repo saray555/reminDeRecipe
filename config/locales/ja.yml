@@ -21,6 +21,7 @@ ja:
       create_my_account: アカウントを作成する
     show:
       your_recipe: さんのレシピ
+      new_recipe: レシピを登録する
   layouts:
     header:
       project_name: Remin-de-Recipe
