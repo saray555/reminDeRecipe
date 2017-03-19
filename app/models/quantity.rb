@@ -1,3 +1,5 @@
 class Quantity < ActiveRecord::Base
-    belongs_to :recipe    
+  validates :recipe_name, presence: true
+  
+  belongs_to :recipe    
 end

@@ -1,7 +1,10 @@
 class MenusController < ApplicationController
-  def show 
+  def show
     @menu = Menu.find(params[:id])
+    @user = @menu.user
     #redirect_to 'index'
+    @recipes = @menu.recipes
+    @recipe = Recipe.new
   end
 
   def index

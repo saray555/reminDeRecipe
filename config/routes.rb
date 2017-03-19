@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   resources :users
   resources :microposts
   resources :menus
+  resources :recipes
+  resources :quantities
   resources :relationships, only: [:create, :destroy]
 
   scope '(/:locale)', constraints: { locale: /\w{2}/ } do

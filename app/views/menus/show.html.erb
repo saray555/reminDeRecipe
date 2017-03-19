@@ -19,3 +19,16 @@
     </div>  
   </div>
 </div>
+
+<%# @recipes.each do |f| %>
+  <%#= form_for(f) do |fx| %>
+    <%#= fx.text_field "材料と分量のカラムがない", readonly: true %>
+    <%#= fx.text_field "材料と分量のカラムがない", readonly: true %>
+  <%# end %>
+<%# end %>
+
+<%= form_for(@recipe) do |f| %>
+  <%= f.text_field "材料と分量のカラムがない" %>
+  <%= f.text_field "材料と分量のカラムがない" %>
+  <%= f.submit %>
+<% end %>
