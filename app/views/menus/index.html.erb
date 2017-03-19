@@ -4,18 +4,21 @@
   </h1>
 
   <div class="container">
+   <div class= "col-sm-9">
+   
     <div class="row">
+    <% @user.menus.each do |menu| %>
       <div class="col-sm-3" style="text-align: center">
-        <h2>title</h2>
-        <p><img class="img-circle" src="" alt="" width="180" height="180">
+        <h2><%= menu.menu_name %></h2>
+        <p><img class="img-circle" src="" alt="" width="160" height="160">
         </p>
-        <o>aaaa</o>
+        <p><%= menu.description %></p>
         <%= link_to t('.view_details') %>    
       </div>
-
+    <% end %>
+    </div>      
+  </div>      
   <%= render 'menus/sidemenu' %>
-      
     
-    </div>  
   </div>
 </div>

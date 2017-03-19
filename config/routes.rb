@@ -2,12 +2,9 @@ Rails.application.routes.draw do
   root to: 'users#top'
   
   get    'signup', to: 'users#show'
-  #get    'signup', to: 'users#index'
   get    'login' , to: 'sessions#new'
   post   'login' , to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
-  #get    'menu' , to: 'menu#show'
-  
 
   resources :users
   resources :microposts

@@ -1,8 +1,11 @@
 class MenusController < ApplicationController
   def show 
-    @user = User.find(params[:id])
     @menu = Menu.find(params[:id])
-    #@ = @user.microposts.order(created_at: :desc)
+    #redirect_to 'index'
+  end
+
+  def index
+    @user = current_user
   end
 
   def new
@@ -13,21 +16,21 @@ class MenusController < ApplicationController
     @menu = current_user.menus.build(menu_params)
     p @menu.inspect
     if @menu.save
-      flash[:success] = "Yaaaay!"
-      redirect_to menu_path(@menu)
+      flash[:success] = "Saved successfully."
+      redirect_to menus_path(@menu)
     else
       render 'new'
     end
   end
   
-#  def index 
-#      #redirect_to users_path#(@menu)
-#      render 'users#show'
-#  end
-  
   private
+
+  def user_params
+    params.require(:user).permit(:name, :email)
+  end  
   
   def menu_params
     params.require(:menu).permit(:menu_date, :menu_name, :description)
   end
+
 end

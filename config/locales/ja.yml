@@ -23,8 +23,8 @@ ja:
       welcome_msg: ようこそ、ReminDeRecipe へ!
       sign_up_now: ユーザー登録はこちら
     show:
-      your_recipe: さんのレシピ
-      new_recipe: レシピを登録する
+      your_profile: さんのプロフィール
+      edit_profile: プロフィールを編集する
   layouts:
     header:
       project_name: Remin-de-Recipe
@@ -47,7 +47,10 @@ ja:
       menu_date: 作成日
       description: 詳細
       create_menu: レシピを登録
-    show:
+    index:
+      your_recipe: さんのレシピ
+    sidemenu:
+      new_recipe: レシピを登録する
   activerecord:
     attributes:
       user:

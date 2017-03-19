@@ -49,8 +49,8 @@ en:
       welcome_msg: Welcome to the ReminDeRecipe!
       sign_up_now: Sign up now!
     show:
-      your_recipe: "'s Recipe"
-      new_recipe: Register New Recipe
+      your_profile: "'s Profile"
+      edit_profile: Edit Profile
   layouts:
     header:
       project_name: Remin-de-Recipe
@@ -73,7 +73,10 @@ en:
       menu_date: Created Date
       description: Description
       create_menu: Register Your Recipe
-    show:
+    index:
+      your_recipe: "'s Recipe"
+    sidemenu:
+      new_recipe: Register New Recipe
   activerecord:
     attributes:
       user:
