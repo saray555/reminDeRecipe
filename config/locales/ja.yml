@@ -19,6 +19,9 @@ ja:
       password: パスワード
       password_confirmation: パスワード (確認)
       create_my_account: アカウントを作成する
+    top:
+      welcome_msg: ようこそ、ReminDeRecipe へ!
+      sign_up_now: ユーザー登録はこちら
     show:
       your_recipe: さんのレシピ
       new_recipe: レシピを登録する
@@ -28,6 +31,7 @@ ja:
       home: ホーム
       myrecipe: あなたのレシピ
       myfavorite: お気に入り♡
+      myprofile: プロフィール
       sign_up: 新規登録
       login: ログイン
       sign_up_now: ユーザー登録をしよう！
@@ -36,10 +40,6 @@ ja:
       language: 言語
       english: English
       japanese: 日本語
-  static_pages:
-    home:
-      welcome_msg: ようこそ、ReminDeRecipe へ!
-      sign_up_now: ユーザー登録はこちら
   menus:
     new:
       title_menu: レシピを登録

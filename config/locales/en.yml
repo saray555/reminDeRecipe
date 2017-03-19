@@ -45,6 +45,9 @@ en:
       password: パスワード
       password_confirmation: パスワード (確認)
       create_my_account: アカウントを作成する
+    top:
+      welcome_msg: Welcome to the ReminDeRecipe!
+      sign_up_now: Sign up now!
     show:
       your_recipe: "'s Recipe"
       new_recipe: Register New Recipe
@@ -54,6 +57,7 @@ en:
       home: Home
       myrecipe: Your Recipe
       myfavorite: MyFavorite
+      myprofile:  Profile
       sign_up: Sign Up
       login: Login
       sign_up_now: Sign up now!
@@ -62,10 +66,6 @@ en:
       language: Language
       english: English
       japanese: 日本語
-  static_pages:
-    home:
-      welcome_msg: Welcome to the ReminDeRecipe!
-      sign_up_now: Sign up now!
   menus:
     new:
       title_menu: Register Your Recipe

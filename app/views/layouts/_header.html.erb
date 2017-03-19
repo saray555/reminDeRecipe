@@ -3,12 +3,12 @@
   <h1 class="project_title"><%= link_to t('.project_name'), '#' %></h1>
   <nav>
       <ul class="nav navbar-nav navbar-left">
-        <li ><%= link_to t('.home'), root_path %></li>
+        <li ><%#= link_to t('.home'), root_path %></li>
   
 <% if logged_in? %>
-      <li ><%= link_to t('.myrecipe'), users_path %></li>
+      <li ><%= link_to t('.myrecipe'), menus_path %></li>
       <li ><%= link_to t('.myfavorite'), '#' %></li>
-
+      <li ><%= link_to t('.myprofile'), '#' %></li>
 <% else %>
         <li ><%= link_to t('.sign_up'), new_user_path %></li>
         <li ><%= link_to t('.login'), login_path %></li>

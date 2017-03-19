@@ -1,9 +1,16 @@
 class UsersController < ApplicationController
+  def top
+  end
+  
   def show 
     @user = User.find(params[:id])
     @microposts = @user.microposts.order(created_at: :desc)
   end
   
+  #def home
+  #  @micropost = current_user.microposts.build if logged_in?
+  #end
+
   def new
     @user = User.new
   end

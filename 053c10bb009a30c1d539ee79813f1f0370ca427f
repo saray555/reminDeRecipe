@@ -1,0 +1,95 @@
+[33mcommit 053c10bb009a30c1d539ee79813f1f0370ca427f[m
+Author: Noriko Ohnuki <nnorky@gmail.com>
+Date:   Fri Mar 17 00:22:19 2017 +0000
+
+    stop for now
+
+[33mcommit 4302f868ac4ae5fc8f5703bfb522a01677a133ba[m
+Author: Noriko Ohnuki <nnorky@gmail.com>
+Date:   Wed Mar 15 10:38:48 2017 +0000
+
+    checked with mentor. but now has action error.
+
+[33mcommit 753b1ea6156b680fd380fa552b9001b6268e6cfe[m
+Author: Noriko Ohnuki <nnorky@gmail.com>
+Date:   Wed Mar 15 08:55:01 2017 +0000
+
+    it works until here
+
+[33mcommit 7b5d4b2b85befcabdc87f4f35a314f268daf20ee[m
+Author: Noriko Ohnuki <nnorky@gmail.com>
+Date:   Wed Mar 15 07:37:09 2017 +0000
+
+    added menu on controller
+
+[33mcommit c625870046cb1cba5bfccb892c27e2f0e1c772a2[m
+Author: Noriko Ohnuki <nnorky@gmail.com>
+Date:   Wed Mar 15 04:16:34 2017 +0000
+
+    added Menu model
+
+[33mcommit ff7a1169bed8bcbe5c2fb021629a93b9c2fb98d5[m
+Author: Noriko Ohnuki <nnorky@gmail.com>
+Date:   Mon Mar 13 09:02:29 2017 +0000
+
+    works! added microposts
+
+[33mcommit 2fac58f31b7eedc86d4b088c88aa251908297d23[m
+Author: Noriko Ohnuki <nnorky@gmail.com>
+Date:   Mon Mar 13 07:57:05 2017 +0000
+
+    deleted
+
+[33mcommit 3621757f12f6db15741e1b6d2adfd32bf851f74a[m
+Author: Noriko Ohnuki <nnorky@gmail.com>
+Date:   Sun Mar 12 10:45:36 2017 +0000
+
+    checked with mentor
+
+[33mcommit c051741db363c048c609dda39143f0deb473615e[m
+Author: Noriko Ohnuki <nnorky@gmail.com>
+Date:   Thu Mar 9 13:49:29 2017 +0000
+
+    login completed
+
+[33mcommit 06612d2abf6529893150d1d6a5d2f61863cd1851[m
+Author: Noriko Ohnuki <nnorky@gmail.com>
+Date:   Wed Mar 8 10:04:43 2017 +0000
+
+    checked with mentor
+
+[33mcommit efd9d52028d41daa4a0731b77656cca1cbe3f67f[m
+Author: Noriko Ohnuki <nnorky@gmail.com>
+Date:   Wed Mar 8 09:29:59 2017 +0000
+
+    updated
+
+[33mcommit c49f0166fa2133d9e55e3859f893310903fad2ec[m
+Author: Noriko Ohnuki <nnorky@gmail.com>
+Date:   Wed Mar 8 08:59:07 2017 +0000
+
+    Error translation updated
+
+[33mcommit 2c5a50805427685ab5e86bdc5551f022a938c738[m
+Author: Noriko Ohnuki <nnorky@gmail.com>
+Date:   Wed Mar 8 04:01:21 2017 +0000
+
+    Set the [locale].
+
+[33mcommit e8482c4ca67343482d2ad8f3209b4915966473df[m
+Author: Noriko Ohnuki <nnorky@gmail.com>
+Date:   Mon Mar 6 13:48:26 2017 +0000
+
+    added language.. but something is not right
+
+[33mcommit b9a00d92f88725cfbcddd31332c436799204c8d8[m
+Author: Noriko Ohnuki <nnorky@gmail.com>
+Date:   Sun Mar 5 12:58:45 2017 +0000
+
+    added controllers and model
+
+[33mcommit b5085d05f469d731f6f16965785564f4b075e3a9[m
+Author: Noriko Ohnuki <nnorky@gmail.com>
+Date:   Sun Mar 5 11:52:33 2017 +0000
+
+    first commit

@@ -1,64 +1,23 @@
-<% if logged_in? %>  
-  
 <div class="container">
-  <h1>
-    <%= @user.name +  t('.your_recipe') %>
-  </h1>
-
-  <div class="container marketing">
     <div class="row">
-      <div class="col-sm-3" style="text-align: center">
-        <h2>title</h2>
-        <p><img class="img-circle" src="" alt="" width="180" height="180">
-        </p>
-        <o>aaaa</o>
-        <%= link_to t('.view_details') %>    
-      </div>
-      
-      <div class="col-sm-3" style="text-align: center">
-        <h2>title</h2>
-        <p><img class="img-circle" src="" alt="" width="180" height="180">
-        </p>
-        <o>aaaa</o>
-        <%= link_to t('.view_details') %>    
-      </div>
-
-      <div class="col-sm-3" style="text-align: center">
-        <h2>title</h2>
-        <p><img class="img-circle" src="" alt="" width="180" height="180">
-        </p>
-        <o>aaaa</o>
-        <%= link_to t('.view_details') %>    
-      </div>
-      <div class="col-sm-2 col-sm-offset-1">
-        <%#= link_to "テストレシピ new", new_menu_path if current_user %>    
-        <div class="sidebar-module sidebar-module-inset">
-          <%= link_to t('.new_recipe'), new_menu_path, class: "btn btn-large btn-success" %>
-        </div>
-      </div>    
-    
-    </div>  
-  </div>
-<% end %>
-
- <!-- <div class="row">-->
- <!-- <aside class="col-md-4">-->
- <!--   <section class="user_info">-->
- <!--     <h1>-->
- <!--       <%#= gravatar_for @user %>-->
- <!--       <%#= @user.name %>-->
- <!--     </h1>-->
- <!--   </section>-->
- <!-- </aside>-->
- <!-- <div class="col-md-8">-->
- <!--   <%#= render 'follow_form' if logged_in? %>-->
- <!--   <%# if @user.microposts.any? %>-->
- <!--     <h3>Microposts (<%#= @user.microposts.count %>)</h3>-->
- <!--     <ol class="microposts">-->
- <!--       <%#= render @microposts %>-->
- <!--     </ol>-->
- <!--   <%# end %>-->
- <!-- </div>-->
- <!--</div>-->
-
+      <aside class="col-md-4">
+        <section class="user_info">
+          <h1>
+            <%= gravatar_for @user %>
+            <%= @user.name%>
+          </h1>
+          <p>プロフィールなど追加？</p>
+        </section>
+      </aside>
+    <div class="col-md-8">
+      <%#= render 'follow_form' if logged_in? %>
+      <% if @user.microposts.any? %>
+      <h3>Microposts (<%= @user.microposts.count %>)</h3>
+      <ol class="microposts">
+        <%= render @microposts %>
+      </ol>
+      <% end %>
+    </div>
+   </div>
 </div>
+

@@ -1,6 +1,7 @@
 class MenusController < ApplicationController
   def show 
-    #@menu = Menu.find(params[:id])
+    @user = User.find(params[:id])
+    @menu = Menu.find(params[:id])
     #@ = @user.microposts.order(created_at: :desc)
   end
 
